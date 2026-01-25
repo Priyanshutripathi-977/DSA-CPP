@@ -6,18 +6,17 @@ int main()
     int n;
     cout << "enter the number n : ";
     cin >> n;
-
+    
     for (int i = 0; i < n; i++)
-    { 
-        for (int j = 0; j < i; j++)
+    {
+        char ch = 'E';
+        for (int j = i + 1; j > 0; j--)
         {
-            cout << "  ";
+            cout << ch;
+            ch--;
         }
-        for (int j = 0; j < n - i; j++)
-        {
-            cout << i + 1 << " ";
-        }
-        cout << "\n";
+        cout << endl;
     }
+
     return 0;
-} 
+}
